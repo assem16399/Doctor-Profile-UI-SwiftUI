@@ -25,13 +25,13 @@ struct DoctorProfileAboutTab: View {
                     
                     ProfileSection(title: "Pengalaman Praktik", content: "RSPAD Gatot Soebroto",contentColor: .primary)
                     
-                }.frame(maxWidth: .infinity)
+                }
                 
                 Text("2017 - sekarang")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 
-            }
+            }.frame(maxWidth: .infinity)
         }
     }
 }
