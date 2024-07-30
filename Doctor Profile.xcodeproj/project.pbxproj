@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F40AAE032C556CE2002AB00B /* Doctor_ProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40AAE022C556CE2002AB00B /* Doctor_ProfileApp.swift */; };
-		F40AAE052C556CE2002AB00B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40AAE042C556CE2002AB00B /* ContentView.swift */; };
+		F40AAE052C556CE2002AB00B /* DoctorProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40AAE042C556CE2002AB00B /* DoctorProfileView.swift */; };
 		F40AAE072C556CE3002AB00B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40AAE062C556CE3002AB00B /* Assets.xcassets */; };
 		F40AAE0A2C556CE3002AB00B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40AAE092C556CE3002AB00B /* Preview Assets.xcassets */; };
+		F444DC652C597AF500747013 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444DC642C597AF500747013 /* View+Ext.swift */; };
+		F4DB3A772C584D87007F3CC6 /* DoctorProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB3A762C584D87007F3CC6 /* DoctorProfileHeader.swift */; };
+		F4DB3A792C585645007F3CC6 /* DoctorProfileAboutTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB3A782C585645007F3CC6 /* DoctorProfileAboutTab.swift */; };
+		F4DB3A7B2C585697007F3CC6 /* DoctorProfileLocationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB3A7A2C585697007F3CC6 /* DoctorProfileLocationTab.swift */; };
+		F4DB3A7D2C5856C5007F3CC6 /* DoctorProfileReviewsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB3A7C2C5856C5007F3CC6 /* DoctorProfileReviewsTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F40AADFF2C556CE2002AB00B /* Doctor Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40AAE022C556CE2002AB00B /* Doctor_ProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor_ProfileApp.swift; sourceTree = "<group>"; };
-		F40AAE042C556CE2002AB00B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F40AAE042C556CE2002AB00B /* DoctorProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileView.swift; sourceTree = "<group>"; };
 		F40AAE062C556CE3002AB00B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40AAE092C556CE3002AB00B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F444DC642C597AF500747013 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		F4DB3A762C584D87007F3CC6 /* DoctorProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileHeader.swift; sourceTree = "<group>"; };
+		F4DB3A782C585645007F3CC6 /* DoctorProfileAboutTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileAboutTab.swift; sourceTree = "<group>"; };
+		F4DB3A7A2C585697007F3CC6 /* DoctorProfileLocationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileLocationTab.swift; sourceTree = "<group>"; };
+		F4DB3A7C2C5856C5007F3CC6 /* DoctorProfileReviewsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileReviewsTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		F40AAE012C556CE2002AB00B /* Doctor Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F444DC622C597AC300747013 /* Utils */,
+				F4DB3A752C584D66007F3CC6 /* Views */,
 				F40AAE022C556CE2002AB00B /* Doctor_ProfileApp.swift */,
-				F40AAE042C556CE2002AB00B /* ContentView.swift */,
+				F40AAE042C556CE2002AB00B /* DoctorProfileView.swift */,
 				F40AAE062C556CE3002AB00B /* Assets.xcassets */,
 				F40AAE082C556CE3002AB00B /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				F40AAE092C556CE3002AB00B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F444DC622C597AC300747013 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F444DC632C597ACE00747013 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F444DC632C597ACE00747013 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F444DC642C597AF500747013 /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4DB3A752C584D66007F3CC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4DB3A762C584D87007F3CC6 /* DoctorProfileHeader.swift */,
+				F4DB3A782C585645007F3CC6 /* DoctorProfileAboutTab.swift */,
+				F4DB3A7A2C585697007F3CC6 /* DoctorProfileLocationTab.swift */,
+				F4DB3A7C2C5856C5007F3CC6 /* DoctorProfileReviewsTab.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F40AAE052C556CE2002AB00B /* ContentView.swift in Sources */,
+				F444DC652C597AF500747013 /* View+Ext.swift in Sources */,
+				F4DB3A7D2C5856C5007F3CC6 /* DoctorProfileReviewsTab.swift in Sources */,
+				F40AAE052C556CE2002AB00B /* DoctorProfileView.swift in Sources */,
+				F4DB3A772C584D87007F3CC6 /* DoctorProfileHeader.swift in Sources */,
+				F4DB3A792C585645007F3CC6 /* DoctorProfileAboutTab.swift in Sources */,
+				F4DB3A7B2C585697007F3CC6 /* DoctorProfileLocationTab.swift in Sources */,
 				F40AAE032C556CE2002AB00B /* Doctor_ProfileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

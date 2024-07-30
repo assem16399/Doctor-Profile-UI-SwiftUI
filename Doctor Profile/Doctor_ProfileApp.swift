@@ -11,7 +11,7 @@ import SwiftUI
 struct Doctor_ProfileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DoctorProfileView()
         }
     }
 }
